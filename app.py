@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 
 # Función para obtener los datos de la API
-@st.cache
+@st.cache_data
 def fetch_countries_data():
     url = "https://restcountries.com/v3.1/all"
     response = requests.get(url)
